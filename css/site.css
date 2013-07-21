@@ -9062,7 +9062,7 @@ body {
 }
 
 .carousel .carousel-inner {
-  border: 1px solid #666666;
+  border-bottom: 1px solid #666666;
 }
 
 .carousel-control {
