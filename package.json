@@ -1,0 +1,15 @@
+{
+  "name": "SquidLabs",
+  "version": "0.0.1",
+  "description": "SquidLabs Home Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Rick Butler",
+  "license": "BSD",
+  "dependencies": {
+    "recess": "~1.1.9"
+  }
+}

@@ -1,0 +1,157 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/bootstrap/less/responsive.less";
+@import "variables.less";
+
+body {
+    color: #222222;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+    background: #aea79f;
+    background: url("../img/home-slant-pattern.png") center center repeat, -moz-linear-gradient(-45deg, #421c52 0%, #333333 100%);
+    background: url("../img/home-slant-pattern.png") center center repeat, -webkit-gradient(linear, left top, right bottom, color-stop(0%, #421c52), color-stop(100%, #333333));
+    background: url("../img/home-slant-pattern.png") center center repeat, -webkit-linear-gradient(-45deg, #421c52 0%, #333333 100%);
+    background: url("../img/home-slant-pattern.png") center center repeat, -o-linear-gradient(-45deg, #421c52 0%, #333333 100%);
+    background: url("../img/home-slant-pattern.png") center center repeat, -ms-linear-gradient(-45deg, #421c52 0%, #333333 100%);
+    background: url("../img/home-slant-pattern.png") center center repeat, linear-gradient(135deg, #421c52 0%, #333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#aea79f', endColorstr = '#421c52', GradientType = 1);
+
+}
+
+.pop-out {
+    background: rgba(256, 256, 256, 0.15);
+    border: 1px solid rgba(256, 256, 256, 0.15);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.navbar-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px;
+}
+
+.squid-logo-first {
+    color: @squid-purple;
+}
+
+.squid-logo-second {
+
+    color: @squid-orange;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+    color: #333333;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #666666;
+}
+
+.carousel {
+    margin-bottom: 60px;
+
+    .container {
+        position: relative;
+        z-index: 9;
+    }
+    .item {
+        height: 500px;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 500px;
+    }
+    .carousel-inner{
+        border:1px solid #666666;
+    }
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+
+    h1, .lead {
+        margin: 0;
+        line-height: 1.25;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    }
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-inner {
+        margin: -20px;
+    }
+
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .container {
+
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        height: 300px;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 18px;
+    }
+
+}
+
