@@ -8995,19 +8995,11 @@ a.badge:focus {
 }
 
 body {
-  color: #222222;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  color: #7F8289;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   background: #aea79f;
   background: url("../img/home-slant-pattern.png") center center repeat, #2f3238;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aea79f', endColorstr='#421c52', GradientType=1);
-}
-
-.pop-out {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: rgba(256, 256, 256, 0.15);
-  border: 1px solid rgba(256, 256, 256, 0.15);
-  border-radius: 5px;
 }
 
 .navbar-wrapper {
@@ -9035,8 +9027,16 @@ body {
   border-bottom: 1px solid #666666;
 }
 
+.info-bar {
+  padding: 20px 0;
+  margin-bottom: 40px;
+  background-color: #666666;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .carousel .container {
@@ -9054,10 +9054,6 @@ body {
   left: 0;
   height: 500px;
   min-width: 100%;
-}
-
-.carousel .carousel-inner {
-  border-bottom: 1px solid #666666;
 }
 
 .carousel-control {
