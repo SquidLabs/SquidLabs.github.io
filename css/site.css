@@ -9002,16 +9002,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aea79f', endColorstr='#421c52', GradientType=1);
 }
 
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  margin-top: 20px;
-  margin-bottom: -90px;
-}
-
 .squid-logo-first {
   color: #732c7b;
 }
@@ -9030,6 +9020,7 @@ body {
 .info-bar {
   padding: 20px 0;
   margin-bottom: 40px;
+  text-align: center;
   background-color: #666666;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
@@ -9087,14 +9078,6 @@ body {
 }
 
 @media (max-width: 979px) {
-  .container.navbar-wrapper {
-    width: auto;
-    margin-bottom: 0;
-  }
-  .navbar-inner {
-    margin: -20px 0;
-    border-radius: 0;
-  }
   .carousel .item {
     height: 500px;
   }
@@ -9105,9 +9088,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .navbar-inner {
-    margin: -20px;
-  }
   .carousel {
     margin-right: -20px;
     margin-left: -20px;
