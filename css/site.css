@@ -9002,12 +9002,20 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aea79f', endColorstr='#421c52', GradientType=1);
 }
 
+h2 {
+  color: #dd4814;
+}
+
 .squid-logo-first {
   color: #732c7b;
 }
 
 .squid-logo-second {
   color: #dd4814;
+}
+
+.project {
+  margin-top: 60px;
 }
 
 .featurette-divider {
@@ -9019,7 +9027,8 @@ body {
 
 .info-bar {
   padding: 20px 0;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  color: #222222;
   text-align: center;
   background-color: #666666;
   border-top: 1px solid #111;

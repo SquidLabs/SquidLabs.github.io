@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <title>The Squid Labs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Squid Labs, Squiddle, Rick Butler, Ryan Roseboom, Richard Butler">
-    <meta name="author" content="Rick Butler">
+    <meta name="description" content="The Squid Labs pushes boundaries in web and mobile application development. Founded by Ryan Roseboom, and Rick Butler">
+    <meta name="author" content="Rick Butler, Richard Butler">
+    <meta property="fb:app_id" content="1380131215546699">
+    <meta property="og:title" content="The Squid Labs">
+    <meta property="og:site_name" content="SquidLabs">
+    <meta property="og:url" content="http://www.thesquidlabs.com/">
     <link href="./css/site.css" rel="stylesheet">
 </head>
-<body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<body data-spy="scroll" data-target="#squid-nav">
+<div id="squid-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -22,9 +26,9 @@
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">Products</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#myCarousel">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#people">People</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -63,35 +67,84 @@
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
-<div class="info-bar">
-    <div class="container">test</div>
+<div id="projects" class="info-bar">
+    <div class="container"><a href="">Squiddle</a> &bull; <a href="">GitHub</a></div>
 </div>
 <div class="container">
-    <div class="container-fluid pop-out">
-        <div class="row-fluid ">
+    <div class="container">
+        <div class="row text-center">
+            <h2 >Projects</h2>
+        </div>
+        <div class="row project">
+            <div class="span3 text-right">
+                <img alt="140x140" style="width: 140px; height: 140px;"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFC0lEQVR4Xu3XV0ukQRCF4TIgCAZUMIIJBQMKBvDWn64XillRVEyYLsScMevSDQ6mRc+O+8lY79ws61RNW6cevmmzjo6OnowXCXwxgSzAfDEpymICgAGClABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFGQ/m7u7OxsbGLD8/37q7u99tdHt725aWlqyjo8MqKiri+wcHB7aysmI3NzdWUlJira2tlpeX9yUNSZ/3pV8qwaKMBnN6emqLi4t2cXFhpaWl78CE9ycnJ+3x8TEFJiAZGhqyoqIiq6qqipgCpPb29k9jT/q8T3+hHyjIWDD39/c2MDBglZWVtr+/b8XFxa/AhCfB6OhofHKcnZ2lwOzs7Nj8/Hzq/1NTU/H9/v5+29zcjE+exsZGq62tjf0PDw/W19dnOTk5337eD+w77SMzFszT05NdXl5aQUGBDQ4OWmFh4SswMzMzFtCE5U9PT6eArK+v29ramvX09MSvo7m5Odvd3Y1gcnNzLQA6Pj6OT6zDw0Pr6uqysrIy+1/npb3BhD8gY8G8zOktmI2NDQswwp3m+vo6omhra4tfPVtbW6/AzM7O2t7eXgrM7e2tjYyMWPi3rq7Ompub363kO89LeN9pH/crwYyPj1u4b7x9tbS0WHZ2ti0sLFhnZ6eVl5fHO875+XkEE17hqRUu0eGr6KN7Uah5Cyad89LeYMIf8CvBnJycxIWHV8CwurpqDQ0NVlNTE382PDz84aU3XI7D8q+urqy6ujo+jZqamqy+vv7VWt6C+dfzEt71txz3K8G8TCbcQ17eYcJ7f/uzenl5OSIJf4KHp8/ExES8EPf29sZL9fProzvT83vKed+ywYQ/5FeASTgz18cBxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXhAaNn5roDMK7Xrw8PGD0z1x2Acb1+fXjA6Jm57gCM6/XrwwNGz8x1B2Bcr18fHjB6Zq47AON6/frwgNEzc90BGNfr14cHjJ6Z6w7AuF6/Pjxg9MxcdwDG9fr14QGjZ+a6AzCu168PDxg9M9cdgHG9fn14wOiZue4AjOv168MDRs/MdQdgXK9fHx4wemauOwDjev368IDRM3PdARjX69eHB4yemesOwLhevz48YPTMXHcAxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXh/wBs3s6mncQfmwAAAABJRU5ErkJggg==">
+            </div>
+            <div class="span7">
+                <h2>Squiddle</h2>
+
+                <p>A Mobile Device manager for Android. Squiddle allows users to erase data, locate, and manage
+                    cell-phones from the web or another cell-phone.</p>
+            </div>
+        </div>
+        <div class="row project">
+            <div class="span7 offset2 text-right">
+                <h2>SquidScroll</h2>
+
+                <p>Yet another jQuery scrollbar. Mobile friendly, re-renders on resize or rotate and defines the touch
+                    event for scrolling starting inside the div. Designed for use inside mobile web apps</p>
+            </div>
+            <div class="span3 text-left">
+                <img alt="140x140" style="width: 140px; height: 140px;"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFC0lEQVR4Xu3XV0ukQRCF4TIgCAZUMIIJBQMKBvDWn64XillRVEyYLsScMevSDQ6mRc+O+8lY79ws61RNW6cevmmzjo6OnowXCXwxgSzAfDEpymICgAGClABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFGQ/m7u7OxsbGLD8/37q7u99tdHt725aWlqyjo8MqKiri+wcHB7aysmI3NzdWUlJira2tlpeX9yUNSZ/3pV8qwaKMBnN6emqLi4t2cXFhpaWl78CE9ycnJ+3x8TEFJiAZGhqyoqIiq6qqipgCpPb29k9jT/q8T3+hHyjIWDD39/c2MDBglZWVtr+/b8XFxa/AhCfB6OhofHKcnZ2lwOzs7Nj8/Hzq/1NTU/H9/v5+29zcjE+exsZGq62tjf0PDw/W19dnOTk5337eD+w77SMzFszT05NdXl5aQUGBDQ4OWmFh4SswMzMzFtCE5U9PT6eArK+v29ramvX09MSvo7m5Odvd3Y1gcnNzLQA6Pj6OT6zDw0Pr6uqysrIy+1/npb3BhD8gY8G8zOktmI2NDQswwp3m+vo6omhra4tfPVtbW6/AzM7O2t7eXgrM7e2tjYyMWPi3rq7Ompub363kO89LeN9pH/crwYyPj1u4b7x9tbS0WHZ2ti0sLFhnZ6eVl5fHO875+XkEE17hqRUu0eGr6KN7Uah5Cyad89LeYMIf8CvBnJycxIWHV8CwurpqDQ0NVlNTE382PDz84aU3XI7D8q+urqy6ujo+jZqamqy+vv7VWt6C+dfzEt71txz3K8G8TCbcQ17eYcJ7f/uzenl5OSIJf4KHp8/ExES8EPf29sZL9fProzvT83vKed+ywYQ/5FeASTgz18cBxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXhAaNn5roDMK7Xrw8PGD0z1x2Acb1+fXjA6Jm57gCM6/XrwwNGz8x1B2Bcr18fHjB6Zq47AON6/frwgNEzc90BGNfr14cHjJ6Z6w7AuF6/Pjxg9MxcdwDG9fr14QGjZ+a6AzCu168PDxg9M9cdgHG9fn14wOiZue4AjOv168MDRs/MdQdgXK9fHx4wemauOwDjev368IDRM3PdARjX69eHB4yemesOwLhevz48YPTMXHcAxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXh/wBs3s6mncQfmwAAAABJRU5ErkJggg==">
+            </div>
+        </div>
+    </div>
+    <hr id="people" class="featurette-divider">
+    <div class="container">
+        <div class="row text-center">
+            <h2>People</h2>
+        </div>
+        <div class="row">
             <div class="span3 offset2 text-center">
                 <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;"
                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFC0lEQVR4Xu3XV0ukQRCF4TIgCAZUMIIJBQMKBvDWn64XillRVEyYLsScMevSDQ6mRc+O+8lY79ws61RNW6cevmmzjo6OnowXCXwxgSzAfDEpymICgAGClABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFGQ/m7u7OxsbGLD8/37q7u99tdHt725aWlqyjo8MqKiri+wcHB7aysmI3NzdWUlJira2tlpeX9yUNSZ/3pV8qwaKMBnN6emqLi4t2cXFhpaWl78CE9ycnJ+3x8TEFJiAZGhqyoqIiq6qqipgCpPb29k9jT/q8T3+hHyjIWDD39/c2MDBglZWVtr+/b8XFxa/AhCfB6OhofHKcnZ2lwOzs7Nj8/Hzq/1NTU/H9/v5+29zcjE+exsZGq62tjf0PDw/W19dnOTk5337eD+w77SMzFszT05NdXl5aQUGBDQ4OWmFh4SswMzMzFtCE5U9PT6eArK+v29ramvX09MSvo7m5Odvd3Y1gcnNzLQA6Pj6OT6zDw0Pr6uqysrIy+1/npb3BhD8gY8G8zOktmI2NDQswwp3m+vo6omhra4tfPVtbW6/AzM7O2t7eXgrM7e2tjYyMWPi3rq7Ompub363kO89LeN9pH/crwYyPj1u4b7x9tbS0WHZ2ti0sLFhnZ6eVl5fHO875+XkEE17hqRUu0eGr6KN7Uah5Cyad89LeYMIf8CvBnJycxIWHV8CwurpqDQ0NVlNTE382PDz84aU3XI7D8q+urqy6ujo+jZqamqy+vv7VWt6C+dfzEt71txz3K8G8TCbcQ17eYcJ7f/uzenl5OSIJf4KHp8/ExES8EPf29sZL9fProzvT83vKed+ywYQ/5FeASTgz18cBxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXhAaNn5roDMK7Xrw8PGD0z1x2Acb1+fXjA6Jm57gCM6/XrwwNGz8x1B2Bcr18fHjB6Zq47AON6/frwgNEzc90BGNfr14cHjJ6Z6w7AuF6/Pjxg9MxcdwDG9fr14QGjZ+a6AzCu168PDxg9M9cdgHG9fn14wOiZue4AjOv168MDRs/MdQdgXK9fHx4wemauOwDjev368IDRM3PdARjX69eHB4yemesOwLhevz48YPTMXHcAxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXh/wBs3s6mncQfmwAAAABJRU5ErkJggg==">
 
-                <h2>Ryan Roseboom</h2>
+                <h2><a href="www.ryanroseboom.com">Ryan Roseboom</a></h2>
+
                 <h4>Founder</h4>
 
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
                     mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                     condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <a href="http://www.ryanroseboom.com">www.RyanRoseboom.com</a>
             </div>
             <!-- /.span4 -->
             <div class="span3 offset2 text-center">
                 <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;"
                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAFC0lEQVR4Xu3XV0ukQRCF4TIgCAZUMIIJBQMKBvDWn64XillRVEyYLsScMevSDQ6mRc+O+8lY79ws61RNW6cevmmzjo6OnowXCXwxgSzAfDEpymICgAGClABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFgMGAlABgpLgoBgwGpAQAI8VFMWAwICUAGCkuigGDASkBwEhxUQwYDEgJAEaKi2LAYEBKADBSXBQDBgNSAoCR4qIYMBiQEgCMFBfFGQ/m7u7OxsbGLD8/37q7u99tdHt725aWlqyjo8MqKiri+wcHB7aysmI3NzdWUlJira2tlpeX9yUNSZ/3pV8qwaKMBnN6emqLi4t2cXFhpaWl78CE9ycnJ+3x8TEFJiAZGhqyoqIiq6qqipgCpPb29k9jT/q8T3+hHyjIWDD39/c2MDBglZWVtr+/b8XFxa/AhCfB6OhofHKcnZ2lwOzs7Nj8/Hzq/1NTU/H9/v5+29zcjE+exsZGq62tjf0PDw/W19dnOTk5337eD+w77SMzFszT05NdXl5aQUGBDQ4OWmFh4SswMzMzFtCE5U9PT6eArK+v29ramvX09MSvo7m5Odvd3Y1gcnNzLQA6Pj6OT6zDw0Pr6uqysrIy+1/npb3BhD8gY8G8zOktmI2NDQswwp3m+vo6omhra4tfPVtbW6/AzM7O2t7eXgrM7e2tjYyMWPi3rq7Ompub363kO89LeN9pH/crwYyPj1u4b7x9tbS0WHZ2ti0sLFhnZ6eVl5fHO875+XkEE17hqRUu0eGr6KN7Uah5Cyad89LeYMIf8CvBnJycxIWHV8CwurpqDQ0NVlNTE382PDz84aU3XI7D8q+urqy6ujo+jZqamqy+vv7VWt6C+dfzEt71txz3K8G8TCbcQ17eYcJ7f/uzenl5OSIJf4KHp8/ExES8EPf29sZL9fProzvT83vKed+ywYQ/5FeASTgz18cBxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXhAaNn5roDMK7Xrw8PGD0z1x2Acb1+fXjA6Jm57gCM6/XrwwNGz8x1B2Bcr18fHjB6Zq47AON6/frwgNEzc90BGNfr14cHjJ6Z6w7AuF6/Pjxg9MxcdwDG9fr14QGjZ+a6AzCu168PDxg9M9cdgHG9fn14wOiZue4AjOv168MDRs/MdQdgXK9fHx4wemauOwDjev368IDRM3PdARjX69eHB4yemesOwLhevz48YPTMXHcAxvX69eEBo2fmugMwrtevDw8YPTPXHYBxvX59eMDombnuAIzr9evDA0bPzHUHYFyvXx8eMHpmrjsA43r9+vCA0TNz3QEY1+vXhweMnpnrDsC4Xr8+PGD0zFx3AMb1+vXh/wBs3s6mncQfmwAAAABJRU5ErkJggg==">
 
-                <h2>Rick Butler</h2>
-                <h4>Co-Founder</h4>
+                <h2><a href="www.rick-butler.com">Rick Butler</a></h2>
+
+                <h4>Founder</h4>
 
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
                     porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
                     ut
                     fermentum massa justo sit amet risus.</p>
+                <a href="http://www.rick-butler.com">www.Rick-Butler.com</a>
+            </div>
+        </div>
+    </div>
+    <hr id="contact" class="featurette-divider">
+    <div  class="container">
+        <div class="row text-center">
+            <h2>contact</h2>
+        </div>
+        <div class="row">
+            <div class="span12 text-center">
+                <p>For Web or Mobile Application development, we can be reached at sales@thequidlabs.com</p>
+                <p>For general inquires please contact us at info@thequidlabs.com</p>
             </div>
         </div>
     </div>
@@ -99,7 +152,7 @@
     <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
 
-        <p>© 2013 SquidLabs, inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>&copy; 2013 SquidLabs, llc. &bull; <a href="#">Privacy</a> &bull; <a href="#">Terms</a></p>
     </footer>
 </div>
 
