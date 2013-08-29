@@ -9018,21 +9018,37 @@ h2 {
   margin-top: 60px;
 }
 
-.featurette-divider {
-  margin: 80px 0;
-  color: #333333;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #666666;
-}
-
 .info-bar {
   padding: 20px 0;
-  margin-bottom: 80px;
+  margin: 80px 0 80px 0;
   color: #222222;
   text-align: center;
   background-color: #666666;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+}
+
+.info-bar.first {
+  margin: 0;
+}
+
+#projects {
+  margin: 0 0 80px 0;
+}
+
+.navbar .brand {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.navbar .nav > li {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 15px;
 }
 
 .carousel {
@@ -9048,9 +9064,20 @@ h2 {
   height: 500px;
 }
 
+@media (max-width: 979px) {
+  .carousel img {
+    top: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .carousel img {
+    top: 61px;
+  }
+}
+
 .carousel img {
   position: absolute;
-  top: 0;
   left: 0;
   height: 500px;
   min-width: 100%;
@@ -9118,5 +9145,11 @@ h2 {
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top {
+    margin-bottom: 0;
   }
 }
