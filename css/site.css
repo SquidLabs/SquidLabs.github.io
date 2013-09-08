@@ -9018,6 +9018,10 @@ h2 {
   margin-top: 60px;
 }
 
+body > .container {
+  margin-bottom: 80px;
+}
+
 .info-bar {
   padding: 20px 0;
   margin: 80px 0 80px 0;
